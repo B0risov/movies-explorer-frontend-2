@@ -1,0 +1,143 @@
+.search-form {
+  width: 100%;
+  border-bottom: 1px solid #E8E8E8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 46px;
+}
+
+.search-form__main-block {
+  box-sizing: border-box;
+  width: 100%;
+  height: 72px;
+  padding: 19px;
+  border-radius: 9px;
+  background: #F9F9F9;
+  color: #A0A0A0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form__aux-block {
+  margin: 45px 0 44px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form__icon {
+  display: none;
+}
+
+.search-form__input {
+  margin: 0;
+  padding: 10px 0;
+  min-height: 22px;
+  font-family: inherit; 
+  font-style: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  border: none;
+  background: inherit;
+  color: inherit;
+  text-overflow: clip;
+}
+
+.search-form__input:focus {
+  border-bottom: 1px solid #A0A0A0;
+}
+
+.search-form__input:focus-visible {
+  outline: none;
+}
+
+.search-form__error {
+  padding: 10px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #FF4062;
+}
+
+.search-form__button {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  width: 34px;
+  height: 34px;
+  background: url('../../images/find.svg');
+  border: none;
+  outline: none;
+}
+
+.search-form__button:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.search-form__button:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+@media screen and (min-width: 768px) {
+  .search-form {
+    flex-direction: row;
+  }
+
+  .search-form__combined {
+    box-sizing: border-box;
+    width: 100%;
+    height: 72px;
+    margin-bottom: 120px;
+    padding: 16px;
+    border-radius: 9px;
+    background: #F9F9F9;
+    color: #A0A0A0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-form__main-block {
+    padding: 3px;
+  }
+
+  .search-form__aux-block {
+    min-width: 188px;
+    height: 40px;
+    margin: 16px 0 16px 19px;
+    justify-content: right;
+    border-left: 1px solid #CBCBCB;
+  }
+
+  .search-form__icon {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+    background: url('../../images/search-icon.svg');
+  }
+
+  .search-form__input {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .search-form__combined {
+    margin-bottom: 69px;
+  }
+
+  .search-form__aux-block {
+    min-width: 196px;
+    height: 40px;
+    margin: 16px 14px 16px 30px;
+    justify-content: right;
+    border-left: 1px solid #CBCBCB;
+  }
+}

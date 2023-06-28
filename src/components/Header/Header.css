@@ -1,0 +1,167 @@
+.header {
+  box-sizing: border-box;
+  padding: 15px 14px;
+  min-height: 74px;
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__logo {
+  width: 38px;
+  height: 38px;
+}
+
+.header__logo-link {
+  font-size: 0;
+}
+
+.header__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+}
+
+.header__links_nav {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  font-size: 0;
+}
+
+.header__links_onboard {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  font-size: 0;
+}
+
+.header__links_account {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  font-size: 0;
+}
+
+.header__link {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header__link_type_active {
+  font-weight: 500;
+}
+
+.header__link_type_signin {
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 5px 12px;
+  border-radius: 3px;
+}
+
+.header__link_type_account {
+  background-color: #F9F9F9;
+}
+
+.header__menu-btn {
+  display: flex;
+  margin-left: auto;
+  width: 40px;
+  height: 43px;
+  background-color: #FFFFFF;
+  background-image: url('../../images/hamburger.svg');
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 15px 30px;
+  }
+
+  .header__link {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+  
+  .header__link_type_landing {
+    padding: 8px 20px;
+  }
+
+  .header__link_type_account {
+    min-width: 100px;
+    border-radius: 16px;
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  .header__menu-btn {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 18px 30px;
+  }
+
+  .header__links {
+    margin-left: 44px;
+    gap: 16px;
+  }
+
+  .header__links_nav {
+    display: flex;
+  }
+  
+  .header__links_account {
+    display: flex;
+    gap: 30px;
+  }
+
+  .header__link {
+    font-size: 13px;
+    line-height: 1.38;
+  }
+  
+  .header__menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 18px 0;
+  }
+}
