@@ -8,4 +8,4 @@
 * https://diplom.movies.nomoreparties.sbs
 ## Пулл-реквест
 
-* [Ссылка на пулл-реквест из ветки level-3]()
+* [Ссылка на пулл-реквест из ветки level-3](https://github.com/B0risov/movies-explorer-frontend-2/pull/1)
