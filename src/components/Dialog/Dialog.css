@@ -1,0 +1,214 @@
+.dialog {
+  width: 260px;
+  height: 100%;
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dialog__form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog__head {
+  text-align: center;
+}
+
+.dialog__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.21;
+}
+
+.dialog__data {
+  padding-top: 80px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.18;
+  flex-grow: 1;
+}
+
+.dialog__actions {
+  width: 260px;
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog__link {
+  min-height: 15px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #000000;
+  text-decoration: none;
+}
+
+.dialog__link:last-child {
+  margin-bottom: 0;
+}
+
+.dialog__link_type_hot {
+  color: #FF4062;
+}
+
+.dialog__logo {
+  width: 38px;
+  height: 38px;
+  margin: 0 auto 50px;
+}
+
+.dialog__logo-link {
+  font-size: 0;
+}
+
+.dialog__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.dialog__label {
+  display: block;
+  height: 81px;
+  margin: 0;
+  padding: 0 0 18px 0;
+  border: none;
+  box-sizing: border-box;
+  background-color: inherit;
+  color: #A0A0A0;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.dialog__field {
+  display: block;
+  width: 100%;
+  min-height: 17px;
+  margin: 0 0 6px 0;
+  padding: 5px 0 10px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.dialog__field:last-child {
+  margin-bottom: 0;
+}
+
+.dialog__field:focus-visible {
+  outline: none;
+  border-bottom: 1px solid #000000;
+}
+
+.dialog__field_type_error {
+  color: #FF4062;
+}
+
+.dialog__error {
+  margin-top: 6px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #FF4062;
+}
+
+.dialog__error_active {
+  opacity: 1;
+}
+
+.dialog__submit-btn {
+  width: 260px;
+  min-height: 45px;
+  color: #FFFFFF;
+  background: #000000;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dialog__submit-btn_disabled {
+  background: #A0A0A0;
+}
+
+.dialog__paragraph {
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  color: #A0A0A0;
+}
+
+@media screen and (min-width: 768px) {
+  .dialog {
+    height: 560px;
+    width: 396px;
+    padding-top: 0;
+  }
+
+  .dialog__align {
+    height: calc(100vh - 74px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dialog__logo {
+    margin-bottom: 40px;
+  }
+  
+  .dialog__head {
+    text-align: left;
+  }
+
+  .dialog__data {
+    padding-top: 40px;
+  }
+  
+  .dialog__actions {
+    position: unset;
+    width: 410px;
+  }
+
+  .dialog__link {
+    min-height: 16px;
+    font-size: 13px;
+    line-height: 1.23;
+  }
+
+  .dialog__submit-btn {
+    font-size: 14px;
+    line-height: 1.21;
+    width: 396px;
+  }
+
+  .dialog__paragraph {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .dialog__data {
+    padding-top: 40px;
+  }
+}

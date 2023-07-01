@@ -1,0 +1,26 @@
+.movies {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1140px;
+  padding: 80px 10px 10px;
+}
+
+.movies__message {
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 768px) {
+  .movies {
+    padding: 80px 30px 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .movies {
+    padding: 70px 0 10px;
+  }
+}
